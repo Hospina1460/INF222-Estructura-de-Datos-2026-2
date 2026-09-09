@@ -2,7 +2,7 @@
 Lab 1 — Implementación de la clase Pila (Stack)
 INF 222 Estructura de Datos · Semestre 2026-2
 Estudiante: Edward Hospina
-Grupo: 
+Grupo: Lab B
 Fecha: 04/09/2026
 
 DECLARACIÓN DE USO DE IA:
