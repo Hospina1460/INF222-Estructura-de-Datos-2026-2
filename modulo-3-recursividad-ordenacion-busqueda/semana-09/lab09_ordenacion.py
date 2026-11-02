@@ -3,7 +3,7 @@ Lab 9 — Algoritmos de Ordenación y Comparación de Eficiencia
 INF 222 Estructura de Datos · Semestre 2026-2
 Estudiante: Edward Hospina
 Grupo: Lab B
-Fecha: 09/11/2026
+Fecha: 02/11/2026
 
 DECLARACIÓN DE USO DE IA:
 He utilizado la herramienta de inteligencia artificial DeepSeek como apoyo
