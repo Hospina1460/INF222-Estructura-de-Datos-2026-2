@@ -32,6 +32,8 @@ def factorial(n):
     """
     # ============================================================
     # AGREGADO POR MÍ: implementación recursiva
+    # Se hizo uso la herramienta de la inteligencia artificial DeepSeek 
+    # como apoyo para comprender los conceptos.
     # ============================================================
     if n == 0:          # Caso base
         return 1
@@ -51,6 +53,8 @@ def fibonacci_recursivo(n):
     """
     # ============================================================
     # AGREGADO POR MÍ: implementación recursiva (ingenua)
+    # Se hizo uso la herramienta de la inteligencia artificial DeepSeek 
+    # como apoyo para comprender los conceptos.
     # ============================================================
     if n <= 1:
         return n
@@ -66,6 +70,8 @@ def fibonacci_memoizado(n):
     """
     # ============================================================
     # AGREGADO POR MÍ: implementación recursiva con memoización
+    # Se hizo uso la herramienta de la inteligencia artificial DeepSeek 
+    # como apoyo para comprender los conceptos.
     # ============================================================
     if n <= 1:
         return n
@@ -80,6 +86,8 @@ def fibonacci_iterativo(n):
     """
     # ============================================================
     # AGREGADO POR MÍ: implementación iterativa
+    # Se hizo uso la herramienta de la inteligencia artificial DeepSeek 
+    # como apoyo para comprender los conceptos.
     # ============================================================
     if n <= 1:
         return n
@@ -103,6 +111,8 @@ def torres_de_hanoi(n, origen, destino, auxiliar):
     """
     # ============================================================
     # AGREGADO POR MÍ: implementación recursiva
+    # Se hizo uso la herramienta de la inteligencia artificial DeepSeek 
+    # como apoyo para comprender los conceptos.
     # ============================================================
     if n == 1:
         movimientos.append(f"Mover disco 1 de {origen} a {destino}")
