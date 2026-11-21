@@ -23,9 +23,6 @@ Este laboratorio implementa un árbol binario con recorridos recursivos
 y un recorrido por niveles (BFS) como tarea autónoma.
 """
 
-from collections import deque  # para el recorrido por niveles (tarea)
-
-
 class NodoArbol:
     """Nodo de un árbol binario."""
 
