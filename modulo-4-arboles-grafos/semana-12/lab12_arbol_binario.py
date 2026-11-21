@@ -23,6 +23,9 @@ Este laboratorio implementa un árbol binario con recorridos recursivos
 y un recorrido por niveles (BFS) como tarea autónoma.
 """
 
+from collections import deque  # para el recorrido por niveles (tarea)
+
+
 class NodoArbol:
     """Nodo de un árbol binario."""
 
@@ -56,6 +59,11 @@ class ArbolBinario:
         """
         if primera_llamada:
             nodo = self.raiz
+        # ============================================================
+        # AGREGADO POR MÍ: implementación del recorrido inorden recursivo
+        # Se hizo uso la herramienta de la inteligencia artificial DeepSeek
+        # como apoyo para comprender los conceptos.
+        # ============================================================
         if nodo is None:
             return []
         return (
@@ -63,6 +71,7 @@ class ArbolBinario:
             + [nodo.dato]
             + self.inorden(nodo.hijo_der, False)
         )
+        # ============================================================
 
     def preorden(self, nodo=None, primera_llamada=True):
         """
@@ -71,6 +80,11 @@ class ArbolBinario:
         """
         if primera_llamada:
             nodo = self.raiz
+        # ============================================================
+        # AGREGADO POR MÍ: implementación del recorrido preorden recursivo
+        # Se hizo uso la herramienta de la inteligencia artificial DeepSeek
+        # como apoyo para comprender los conceptos.
+        # ============================================================
         if nodo is None:
             return []
         return (
@@ -78,6 +92,7 @@ class ArbolBinario:
             + self.preorden(nodo.hijo_izq, False)
             + self.preorden(nodo.hijo_der, False)
         )
+        # ============================================================
 
     def postorden(self, nodo=None, primera_llamada=True):
         """
@@ -86,6 +101,11 @@ class ArbolBinario:
         """
         if primera_llamada:
             nodo = self.raiz
+        # ============================================================
+        # AGREGADO POR MÍ: implementación del recorrido postorden recursivo
+        # Se hizo uso la herramienta de la inteligencia artificial DeepSeek
+        # como apoyo para comprender los conceptos.
+        # ============================================================
         if nodo is None:
             return []
         return (
@@ -93,6 +113,7 @@ class ArbolBinario:
             + self.postorden(nodo.hijo_der, False)
             + [nodo.dato]
         )
+        # ============================================================
 
     def por_niveles(self):
         """
@@ -101,6 +122,11 @@ class ArbolBinario:
         TAREA (trabajo autónomo): implementa este método.
         Retorna una lista con los datos en el orden visitado.
         """
+        # ============================================================
+        # AGREGADO POR MÍ: implementación del recorrido BFS con deque
+        # Se hizo uso la herramienta de la inteligencia artificial DeepSeek
+        # como apoyo para comprender los conceptos.
+        # ============================================================
         if self.raiz is None:
             return []
 
@@ -116,6 +142,7 @@ class ArbolBinario:
                 cola.append(nodo.hijo_der)
 
         return resultado
+        # ============================================================
 
     # ------------------------------------------------------------------
     # UTILIDADES
@@ -128,20 +155,32 @@ class ArbolBinario:
         """
         if primera_llamada:
             nodo = self.raiz
+        # ============================================================
+        # AGREGADO POR MÍ: cálculo recursivo de la altura del árbol
+        # Se hizo uso la herramienta de la inteligencia artificial DeepSeek
+        # como apoyo para comprender los conceptos.
+        # ============================================================
         if nodo is None:
             return -1
         return 1 + max(
             self.altura(nodo.hijo_izq, False),
             self.altura(nodo.hijo_der, False)
         )
+        # ============================================================
 
     def contar_nodos(self, nodo=None, primera_llamada=True):
         """Retorna el número de nodos en el árbol."""
         if primera_llamada:
             nodo = self.raiz
+        # ============================================================
+        # AGREGADO POR MÍ: conteo recursivo de nodos
+        # Se hizo uso la herramienta de la inteligencia artificial DeepSeek
+        # como apoyo para comprender los conceptos.
+        # ============================================================
         if nodo is None:
             return 0
         return 1 + self.contar_nodos(nodo.hijo_izq, False) + self.contar_nodos(nodo.hijo_der, False)
+        # ============================================================
 
 
 # =============================================================================
